@@ -11,15 +11,26 @@
   margin-bottom: 2rem;  
 }
 
+article.mapa  p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    }
+
+
+article.mapa iframe{
+    width: 100%;
+    }
+
 footer#f-Index{
     width: 100%;
     height: auto;
-    background-color: #b8bdb5;
-    padding-top: 2rem;
+    background-color: #f1faee;
+    padding-top: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
     display: grid;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-template-areas: 
         'productos service info seguir'
         'copyR copyR copyR copyR'
@@ -48,12 +59,49 @@ footer#f-Index div.area5{
     padding-top: 2rem;
 }
 
+footer#f-Index div.f__container{
+    width: auto;
+    height: auto;
+}
+
+footer#f-Index div ul.f__list{
+    list-style: none;
+}
+
+footer#f-Index div p.f__title{
+    font-weight: bolder;
+    font-size: 1rem;
+    
+}
+
+footer#f-Index div ul.f__list li.f__list--item:hover{
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
 @media(min-width: 200px) and (max-width: 768px){
+
+    article.mapa  p{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bolder;
+        }
+    
+    
+    article.mapa iframe{
+        width: 50%%;
+        }
+    
+
     footer#f-Index{
         width: 100%;
         height: auto;
         background-color: #000;
         color: white;
+        font-size: small;
         padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -82,12 +130,27 @@ footer#f-Index div.area5{
     footer#f-Index div.area4{
         grid-area: seguir;
     }
-    
+
     footer#f-Index div.area5{
         grid-area: copyR;
         margin: auto;
         padding-top: 2rem;
     }
+
+    footer#f-Index div.f_container{
+        text-align: center;
+    }
+
+    footer#f-Index div ul.f__list{
+        list-style: none;
+    }
+
+    footer#f-Index div ul.f__list li.f__list--item:hover{
+        color:lightgray;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
 }
 
 
