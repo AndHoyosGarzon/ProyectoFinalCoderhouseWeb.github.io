@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .branding{
   width: 25px;
   height: 30px;
@@ -6,86 +11,84 @@
   margin-bottom: 2rem;  
 }
 
-
-footer#footerIndex{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #f5f3f4;
-    color: #000;
+footer#f-Index{
     width: 100%;
-    height: 200px;
-}
-
-footer#footerIndex div.footerInfo{
-    display: flex;
-    flex-direction: column; 
+    height: auto;
+    background-color: #b8bdb5;
     padding-top: 2rem;
-    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 
+        'productos service info seguir'
+        'copyR copyR copyR copyR'
+    ; 
 }
 
-footer#footerIndex div.footerInfo p.footerInfo__title{
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 0.9rem;
-    text-align: center;
+footer#f-Index div.area1{
+    grid-area: productos;
 }
 
-footer#footerIndex div.footerInfo ul.footerInfo__list{
-    text-transform: capitalize;
-    list-style: none;   
+footer#f-Index div.area2{
+    grid-area: service;
 }
 
-.items-hov:hover{
-        color: grey;
-        cursor: pointer;
-        text-decoration: underline;
+footer#f-Index div.area3{
+    grid-area: info;
 }
 
-.footerInfo__copy{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.1rem;
+footer#f-Index div.area4{
+    grid-area: seguir;
 }
 
-/*Media footer*/
-@media (min-width: 576px) {
-    footer#footerIndex{
+footer#f-Index div.area5{
+    grid-area: copyR;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+@media(min-width: 200px) and (max-width: 768px){
+    footer#f-Index{
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        color: white;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: grid;
         grid-template-areas: 
-            'product'
-            'atenCliente'
-            'quienSomos'
-            'rs'
+            'productos'
+            'service'
+            'info'
+            'seguir'
             'copyR'
-        ;
+        ; 
     }
-
-    footer#footerIndex div.media1{
-        grid-area: product;
+    
+    footer#f-Index div.area1{
+        grid-area: productos;
     }
-
-    footer#footerIndex div.media2{
-        grid-area: atenCliente;
+    
+    footer#f-Index div.area2{
+        grid-area: service;
     }
-
-    footer#footerIndex div.media3{
-        grid-area: quienSomos;
+    
+    footer#f-Index div.area3{
+        grid-area: info;
     }
-
-    footer#footerIndex div.media4{
-        grid-area: rs;
+    
+    footer#f-Index div.area4{
+        grid-area: seguir;
     }
-
-    footer#footerIndex div.media5{
+    
+    footer#f-Index div.area5{
         grid-area: copyR;
+        margin: auto;
+        padding-top: 2rem;
     }
-
 }
-
-
-
-
-
 
 
 
