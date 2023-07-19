@@ -1,0 +1,96 @@
+.branding{
+  width: 25px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;  
+}
+
+
+footer#footerIndex{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f3f4;
+    color: #000;
+    width: 100%;
+    height: 200px;
+}
+
+footer#footerIndex div.footerInfo{
+    display: flex;
+    flex-direction: column; 
+    padding-top: 2rem;
+    text-align: left;
+}
+
+footer#footerIndex div.footerInfo p.footerInfo__title{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer#footerIndex div.footerInfo ul.footerInfo__list{
+    text-transform: capitalize;
+    list-style: none;   
+}
+
+.items-hov:hover{
+        color: grey;
+        cursor: pointer;
+        text-decoration: underline;
+}
+
+.footerInfo__copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+/*Media footer*/
+@media (min-width: 576px) {
+    footer#footerIndex{
+        grid-template-areas: 
+            'product'
+            'atenCliente'
+            'quienSomos'
+            'rs'
+            'copyR'
+        ;
+    }
+
+    footer#footerIndex div.media1{
+        grid-area: product;
+    }
+
+    footer#footerIndex div.media2{
+        grid-area: atenCliente;
+    }
+
+    footer#footerIndex div.media3{
+        grid-area: quienSomos;
+    }
+
+    footer#footerIndex div.media4{
+        grid-area: rs;
+    }
+
+    footer#footerIndex div.media5{
+        grid-area: copyR;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
