@@ -41,8 +41,6 @@ main {
         }
 
         & .container__galeria--tarjeta:hover{
-            cursor: pointer;
-            width: 401px;
             box-shadow: 2px 2px 30px lightgray;
         }
 
@@ -142,11 +140,6 @@ main {
                 height: auto;
             }
     
-            & .container__galeria--tarjeta:hover{
-                cursor: pointer;
-                width: 301px;
-                box-shadow: 2px 2px 30px lightgray;
-            }
     
             & .container__galeria--tarjeta--img img{
                 width: 100%;

@@ -33,8 +33,6 @@ main .container__galeria .container__galeria--tarjeta {
   height: auto;
 }
 main .container__galeria .container__galeria--tarjeta:hover {
-  cursor: pointer;
-  width: 401px;
   box-shadow: 2px 2px 30px lightgray;
 }
 main .container__galeria .container__galeria--tarjeta--img img {
@@ -112,11 +110,6 @@ main .container__galeria div.info__text button.btn__comprar:hover {
   main .container__galeria .container__galeria--tarjeta {
     width: 300px;
     height: auto;
-  }
-  main .container__galeria .container__galeria--tarjeta:hover {
-    cursor: pointer;
-    width: 301px;
-    box-shadow: 2px 2px 30px lightgray;
   }
   main .container__galeria .container__galeria--tarjeta--img img {
     width: 100%;
