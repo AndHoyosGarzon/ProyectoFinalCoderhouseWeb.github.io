@@ -9,8 +9,8 @@ header{
         &.container-header{
             img{
                 width: 100%;
-                height: 450px;
-            }    
+                height: 550px;
+            }
         }
     }
 }
@@ -21,9 +21,9 @@ main {
         padding-top: 2rem;
         padding-bottom: 2rem;
         font-size: 2.5rem;
+        color: gray;
         &:hover{
-            text-shadow: 2px 3px silver;
-            cursor: pointer;
+            text-shadow: 2px 2px gainsboro;
         }
     }
 
@@ -33,29 +33,170 @@ main {
         display: flex;
         gap: 20px;
         padding: 20px;
-        text-align: center;
         box-sizing: border-box;
         justify-content: space-between;
         & .container__galeria--tarjeta{
             width: 400px;
-            height: 300px;
-            border: 2px solid black;
-            
-        }    
+            height: auto;
+        }
+
+        & .container__galeria--tarjeta:hover{
+            cursor: pointer;
+            width: 401px;
+            box-shadow: 2px 2px 30px lightgray;
+        }
+
         & .container__galeria--tarjeta--img img{
-            width: 250px;
-            height: 250px;
+            width: 100%;
+            height: 100%;
             padding-bottom: 1rem;
-            
         }
 
         & p.container__galeria--tarjeta--title{
+            font-size: 1.5rem;
             font-weight: bolder;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        & div.info__text {
+            width: auto;
+            height: auto;
+            padding: 0 3rem;
+            text-align: center;
+            ul.info__text--list{
+                list-style: none;
+                margin-bottom: 1rem;
+                text-align: left;
+                font-size: smaller;
+                font-weight: 600;
+
+            }
+
+            & button.btn__comprar{
+                margin-bottom: 1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                border: 0.3px solid grey;
+                background-color: #09f;
+                border-color: #008ae6;
+                color: #fff;
+                font-size: 0.8rem;
+                cursor: pointer;
+            }
+
+            & button.btn__comprar:hover{
+                background-color: transparent;
+                color: #000;
+                border-color: #000;
+            }
         }
     }
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
 
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header{
+        div{
+            &.container-header{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    main {
+        h1.container__titulo{
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-size: 1rem;
+            color: gray;
+            &:hover{
+                text-shadow: 2px 2px gainsboro;
+            }
+        }
+    
+        .container__galeria{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+            box-sizing: border-box;
+            justify-content: space-between;
+
+            & .container__galeria--tarjeta{
+                width: 300px;
+                height: auto;
+            }
+    
+            & .container__galeria--tarjeta:hover{
+                cursor: pointer;
+                width: 401px;
+                box-shadow: 2px 2px 30px lightgray;
+            }
+    
+            & .container__galeria--tarjeta--img img{
+                width: 100%;
+                height: 100%;
+                padding-bottom: 1rem;
+            }
+    
+            & p.container__galeria--tarjeta--title{
+                font-size: 1.5rem;
+                font-weight: bolder;
+                margin-bottom: 0.5rem;
+                text-align: center;
+            }
+    
+            & div.info__text {
+                width: auto;
+                height: auto;
+                padding: 0 3rem;
+                text-align: center;
+                ul.info__text--list{
+                    list-style: none;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                    font-size: smaller;
+                    font-weight: 600;
+    
+                }
+    
+                & button.btn__comprar{
+                    margin-bottom: 1rem;
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                    border: 0.3px solid grey;
+                    background-color: #09f;
+                    border-color: #008ae6;
+                    color: #fff;
+                    font-size: 0.8rem;
+                }
+    
+                & button.btn__comprar:hover{
+                    background-color: transparent;
+                    color: #000;
+                    border-color: #000;
+                    
+                }
+            }
+        }
+    }
+    
+}
 
 
 

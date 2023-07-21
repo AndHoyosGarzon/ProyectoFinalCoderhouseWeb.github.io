@@ -26,9 +26,12 @@ footer#f-Index{
     width: 100%;
     height: auto;
     background-color: #f1faee;
+/*     
     padding-top: 3rem;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 2rem; */
+    padding: 3rem 2rem;
+    box-sizing: border-box;
     display: grid;
     justify-content: space-around;
     grid-template-areas: 
@@ -75,7 +78,7 @@ footer#f-Index div p.f__title{
 }
 
 footer#f-Index div ul.f__list li.f__list--item:hover{
-    color:black;
+    color: silver;
     text-decoration: underline;
     cursor: pointer;
 }
