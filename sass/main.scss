@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+       
+    
+}
+
+body{
+    background-color: #F1F1F1;
 }
 
 header{
@@ -16,6 +22,7 @@ header{
 }
 
 main {
+
     h1.container__titulo{
         text-align: center;
         padding-top: 2rem;
@@ -38,6 +45,7 @@ main {
         & .container__galeria--tarjeta{
             width: 400px;
             height: auto;
+            
         }
 
         & .container__galeria--tarjeta:hover{
