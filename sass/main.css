@@ -224,4 +224,27 @@ main .container__galeria div.info__text button.btn__comprar:hover {
   background-color: #fff;
   color: #000;
   border: 0.5px solid #09f;
+}
+
+/*mediaQueries pagina de contacto*/
+@media (min-width: 300px) and (max-width: 768px) {
+  #container__form {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "imagen" "formulario";
+  }
+  #container__form .card {
+    padding-top: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+    grid-area: imagen;
+  }
+  #container__form .contacto {
+    grid-area: formulario;
+  }
 }/*# sourceMappingURL=main.css.map */
