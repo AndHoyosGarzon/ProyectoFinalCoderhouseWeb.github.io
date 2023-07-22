@@ -150,4 +150,78 @@ main .container__galeria div.info__text button.btn__comprar:hover {
     color: #000;
     border-color: #000;
   }
+}
+/*estilos pagina de contacto*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#container__form {
+  width: 100%;
+  height: 725px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+#container__form .card {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/banner/img-formulario.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#container__form .contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container__form .contacto .contacto__text {
+  width: 300px;
+  text-align: left;
+}
+#container__form .contacto .contacto__text .contacto__text--parraf {
+  font-size: small;
+  font-weight: bold;
+  color: gray;
+  margin-top: 5px;
+}
+#container__form .contacto .contacto__campo {
+  list-style: none;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 30px;
+}
+#container__form .contacto .contacto__campo .contacto__campo--label {
+  font-size: small;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+  color: gray;
+}
+#container__form .contacto .contacto__campo .contacto__campo--input {
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: 0.5px solid grey;
+  border-radius: 2px;
+}
+#container__form .contacto__btn .contacto__btn--style {
+  margin-top: 1.5rem;
+  padding: 10px 25px;
+  background-color: #008ae6;
+  color: #fff;
+  border: 0.5px solid #09f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#container__form .contacto__btn .contacto__btn--style:hover {
+  background-color: #fff;
+  color: #000;
+  border: 0.5px solid #09f;
 }/*# sourceMappingURL=main.css.map */

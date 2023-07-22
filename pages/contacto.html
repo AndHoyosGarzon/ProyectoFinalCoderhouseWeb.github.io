@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="../sass/main.css">
 </head>
 <body>
-    
+    <div id="container__form">
+
+        <div class="card">
+        </div>
+        
+        <form class="contacto">
+            <div class="contacto__text">
+                <h2 class="contacto__text--title">Contactanos</h2>
+                <p class="contacto__text--parraf">Por favor dejanos tus datos</p>
+            </div>
+            <li class="contacto__campo">
+                <label class="contacto__campo--label" for="nombre">Nombre</label>
+                <input class="contacto__campo--input" placeholder="Juan Gonzalez" type="text" id="nombre" required>
+            </li>
+            <li class="contacto__campo">
+                <label class="contacto__campo--label" for="email">Email</label>
+                <input class="contacto__campo--input" placeholder="juango@gmail.com" type="email" id="email" required>
+            </li>
+            <li class="contacto__campo">
+                <label class="contacto__campo--label" for="tel">Telefono</label>
+                <input class="contacto__campo--input" placeholder="+569 61378988" type="tel" id="tel">
+            </li>
+            <li class="contacto__campo">
+                <label class="contacto__campo--label" for="ubicacion">Direccion</label>
+                <input class="contacto__campo--input" placeholder="Av independencia 733" type="text" id="ubicacion" required>
+            </li>
+            <div class="contacto__btn">
+                <input  class="contacto__btn--style" type="button" required value="ENVIAR">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
