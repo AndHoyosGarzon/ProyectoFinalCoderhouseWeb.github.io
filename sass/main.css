@@ -160,7 +160,7 @@ main .container__galeria div.info__text button.btn__comprar:hover {
 
 #container__form {
   width: 100%;
-  height: 725px;
+  height: 800px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
