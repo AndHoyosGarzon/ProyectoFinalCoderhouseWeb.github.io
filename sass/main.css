@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -253,4 +254,17 @@ main .container__galeria div.info__text button.btn__comprar:hover {
     box-sizing: border-box;
     grid-area: formulario;
   }
+}
+/*diseño 404 Error*/
+.body__404 {
+  background-image: url("../img/banner/error404.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.cont__404 {
+  color: white;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

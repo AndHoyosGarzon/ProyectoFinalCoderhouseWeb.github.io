@@ -327,15 +327,20 @@ main {
     }
 
 
+/*diseño 404 Error*/
 
+.body__404{
+    background-image: url('../img/banner/error404.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
 
-
-
-
-
-
-
-
+.cont__404{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
