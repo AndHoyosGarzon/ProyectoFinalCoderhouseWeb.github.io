@@ -5,38 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
     <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
-    <div id="container__form">
+<body id="body__form">
+    
+    <div class="container w-75 mt-5 rounded shadow">
 
-        <div class="card">
+        <div class="row align-items-stretch">
+            <div class="col bg__form d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start">
+                <!-- IMAGEN DE FONDO FORMULARIO -->
+            </div>
+
+            <div class="col bg-white p-5 rounded-end">
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <!-- LOGIN -->
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="conected" class="form-check-input">
+                        <label for="conected" class="form-check-label">Acepto terminos y condiciones.</label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Registrate </button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>No tienes cuenta ? <a href="#">Registrate</a></span>
+                            <br>
+                        <span><a href="#">Recuperar Password</a></span>
+                    </div>
+                </form>
+
+                <!-- LOGIN CON REDES SOCIALES  -->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12 fw-bolder">Iniciar seccion</div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../img/redes/facebook.png" width="32" alt="logo-facebook">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../img/redes/social.png" width="32" alt="logo-facebook">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <form class="contacto">
-            <div class="contacto__text">
-                <h2 class="contacto__text--title">Contactanos</h2>
-                <p class="contacto__text--parraf">Por favor dejanos tus datos</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <form class="mt-3">
+                <div class="row mb-3">
+                     <label class="col-2 col-form-label" for="emailInput">Email</label>
+                    <div class="col-10"> 
+                         <input  type="emai" id="emailInput" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-2 col-form-label" for="passInput">Password</label>
+                    <div class="col-10">
+                        <input type="password" id="passInput" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="checkbox"  class="form-check-input" id="checkTerms" required>
+                            <label for="checkTerms" class="form-check-label">Acepto los terminos y condiciones.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Registrate</button>
+            </form> -->
+        <!-- <form class="row g-3 mt-5">
+            <div class="col-6">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email" required>
             </div>
-            <li class="contacto__campo">
-                <label class="contacto__campo--label" for="nombre">Nombre</label>
-                <input class="contacto__campo--input" placeholder="Juan Gonzalez" type="text" id="nombre" required>
-            </li>
-            <li class="contacto__campo">
-                <label class="contacto__campo--label" for="email">Email</label>
-                <input class="contacto__campo--input" placeholder="juango@gmail.com" type="email" id="email" required>
-            </li>
-            <li class="contacto__campo">
-                <label class="contacto__campo--label" for="tel">Telefono</label>
-                <input class="contacto__campo--input" placeholder="+569 61378988" type="tel" id="tel">
-            </li>
-            <li class="contacto__campo">
-                <label class="contacto__campo--label" for="ubicacion">Direccion</label>
-                <input class="contacto__campo--input" placeholder="Av independencia 733" type="text" id="ubicacion" required>
-            </li>
-            <div class="contacto__btn">
-                <input  class="contacto__btn--style" type="button" required value="ENVIAR">
+            <div class="col-6">
+                <label for="inputPass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña" required>
             </div>
-        </form>
-    </div>
+            <div class="col-12">
+                <label for="inputDireccion" class="form-label">Direccion 1</label>
+                <input type="text" class="form-control" placeholder="Escribe tu direccion" id="inputDireccion" required>
+            </div>
+            <div class="col-12">
+                <label for="inputDireccion" class="form-label">Direccion 2</label>
+                <input type="text" class="form-control" placeholder="Escribe tu direccion" id="inputDireccion">
+            </div>
+            <div class="col-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Escribe tu ciudad" required>
+            </div>
+            <div class="col-3">
+                <label for="inputCodigo" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="inputCodigo" placeholder="cod postal" required>
+            </div>
+            <div class="col-3">
+                <label for="inputPais" class="form-label">Pais</label>
+                <input type="text" class="form-control" id="inputPais" placeholder="Escribe tu Pais" required>
+            </div>
+            <div class="col-12"> 
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkTerms">
+                    <label for="checkTerms" class="form-check-label">Acepto los terminos.</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registrate</button>
+            </div>
+        </form> -->
+    </div>     
+
 </body>
+   
 </html>

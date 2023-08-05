@@ -6,15 +6,42 @@
     <title>Bicicletas De Montaña</title>
     <link rel="stylesheet" href="../sass/main.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body style="background-color: #FFFFFF;">
         <header>
+            <nav class="navbar navbar-expand-md  py-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5 fs-1 fw-bolder" href="#">IH BIKES</a>
+                    <button type="button" class="navbar-toggler">
+                        <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menuNav"></span>
+                    </button>
+                    <div id="menuNav" class="collapse navbar-collapse justify-content-evenly ms-5">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a href="../pages/bicicletasRutas.html" class="nav-link fw-bold">Bicicletas de Ruta</a>
+                            </li>
+                        </ul>   
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a href="../pages/bicicletasUrbanas.html" class="nav-link fw-bold">Bicicletas Urbanas</a>
+                            </li>
+                        </ul> 
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a href="../pages/contacto.html" class="nav-link fw-bold">Contactanos</a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </nav>
+
+
             <div class="container-header">
                 <img  src="../img/banner/header-mtb(1).jpg" alt="img-mtb">
             </div>
         </header>
-        <main class="container">
+        <main>
             <h1 class="container__titulo">BICICLETAS DE MONTAÑA</h1>
             <section class="container__galeria"><!--tarjetas productos -->
                 <div class="container__galeria--tarjeta">

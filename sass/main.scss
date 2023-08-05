@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-       
-    
+
+
 }
 
 body{
@@ -45,7 +45,7 @@ main {
         & .container__galeria--tarjeta{
             width: 400px;
             height: auto;
-            
+
         }
 
         & .container__galeria--tarjeta:hover{
@@ -102,13 +102,13 @@ main {
 
 @media (min-width: 300px) and (max-width: 768px) {
 
-    
+
     *{
         margin: 0;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
-    
+
     header{
         div{
             &.container-header{
@@ -119,7 +119,7 @@ main {
             }
         }
     }
-    
+
     main {
         h1.container__titulo{
             text-align: center;
@@ -131,7 +131,7 @@ main {
                 text-shadow: 2px 2px gainsboro;
             }
         }
-    
+
         .container__galeria{
             width: 100%;
             height: auto;
@@ -147,21 +147,21 @@ main {
                 width: 300px;
                 height: auto;
             }
-    
-    
+
+
             & .container__galeria--tarjeta--img img{
                 width: 100%;
                 height: 100%;
                 padding-bottom: 1rem;
             }
-    
+
             & p.container__galeria--tarjeta--title{
                 font-size: 1.5rem;
                 font-weight: bolder;
                 margin-bottom: 0.5rem;
                 text-align: center;
             }
-    
+
             & div.info__text {
                 width: auto;
                 height: auto;
@@ -173,9 +173,9 @@ main {
                     text-align: left;
                     font-size: smaller;
                     font-weight: 600;
-    
+
                 }
-    
+
                 & button.btn__comprar{
                     margin-bottom: 1rem;
                     padding: 0.5rem 1rem;
@@ -186,161 +186,39 @@ main {
                     color: #fff;
                     font-size: 0.8rem;
                 }
-    
+
                 & button.btn__comprar:hover{
                     background-color: transparent;
                     color: #000;
                     border-color: #000;
-                    
+
                 }
             }
         }
     }
 
-    
+
 }
 
 
 /*estilos pagina de contacto*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+#body__form{
+    background: #e9edc9;
+    background: linear-gradient(to right, #ccd5ae, #e9edc9 );
 }
 
-#container__form  {
-    width: 100%;
-    height: 800px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-
-    & .card{
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/banner/img-formulario.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    & .contacto{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        & .contacto__text{
-            width: 300px;
-            text-align: left;
-            
-            & .contacto__text--title{
-
-            }
-
-            & .contacto__text--parraf{
-                font-size: small;
-                font-weight: bold;
-                color: gray;
-                margin-top: 5px;
-            }
-        }
-       
-        & .contacto__campo{
-            list-style: none;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            width: 300px;
-            height: 30px;
-
-            & .contacto__campo--label{
-                font-size: small;
-                font-weight: bold;
-                padding-bottom: 0.3rem;
-                color: gray;
-            }
-
-            & .contacto__campo--input{
-                padding: 5px 20px;
-                box-sizing: border-box;
-                border: 0.5px solid grey;
-                border-radius: 2px;
-            }
-
-        }
-    }
-
-    & .contacto__btn .contacto__btn--style{
-            margin-top: 1.5rem;
-            padding: 10px 25px;
-            background-color: #008ae6;
-            color: #fff;
-            border: 0.5px solid #09f;
-            border-radius: 5px;
-            cursor: pointer;
-    }
-
-    & .contacto__btn .contacto__btn--style:hover{
-        background-color: #fff;
-        color: #000;
-        border: 0.5px solid #000;
-    }
-
-}
-
-/*mediaQueries pagina de contacto*/
-@media (min-width: 300px) and (max-width: 768px) {
-
-    #container__form{
-        width: 100%;
-        height: auto;
-        display: grid;
-        gap: 0px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-            'imagen'
-            'formulario';
-
-        &  .card{  
-            width: auto; 
-            grid-area: imagen;
-        }
-
-        & .contacto{
-            width: 100%;
-            height: 100%;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            box-sizing: border-box;
-            grid-area: formulario;
-        }
-
-        
-        
-        }
-    
-    }
-
-
-/*diseño 404 Error*/
-
-.body__404{
-    background-image: url('../img/banner/error404.jpg');
-    background-repeat: no-repeat;
+.bg__form{
+    background-image:url(../img/banner/img-formulario.jpg);
+    background-position: center center;
     background-size: cover;
-    margin: auto;
+    background-repeat: no-repeat;
 }
 
-.cont__404{
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
+
+
+
+
+
 
 
 
